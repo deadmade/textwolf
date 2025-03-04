@@ -5,7 +5,7 @@ let
   configDir =
     if pkgs.stdenv.hostPlatform.isDarwin
     then "Library/Application\ Support/Firefox/Profiles/"
-    else ".mozilla/firefox/";
+    else ".librewolf/";
 
   cfg = config.textfox;
 in {
