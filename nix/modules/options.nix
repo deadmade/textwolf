@@ -33,14 +33,12 @@ in {
       newtabLogo = mkOption {
         type = str;
         default = ''
-
   __                   __                .__   _____ 
 _/  |_  ____ ___  ____/  |___  _  ______ |  |_/ ____\
 \   __\/ __ \\  \/  /\   __\ \/ \/ /  _ \|  |\   __\ 
  |  | \  ___/ >    <  |  |  \     (  <_> )  |_|  |   
  |__|  \___  >__/\_ \ |__|   \/\_/ \____/|____/__|   
            \/      \/                                
-
         '';
         apply = p: replaceStrings ["\n" "\\"] ["\\A" "\\\\"] p;
         description = "ASCII logo used for new tab page";
